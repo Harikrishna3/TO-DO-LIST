@@ -6,7 +6,7 @@ body {
   }
   .container {
     display: block;
-    width: 400px;
+    width: 500px;
     margin: 100px auto 0;
     background-color: rgb(250, 249, 249);
     border-radius: 0px;
@@ -26,23 +26,31 @@ body {
     outline: none;
   }
   button {
-    background:wheat;
-    border: 3px blueviolet solid;
+    background:white;
+    border: 1px;
     color: rgb(0, 0, 0);
-    font-size: 15px;
-    width: 60px;
+    
     margin: 10px 10px 0;
     font-family: Lato, sans-serif;
     cursor: pointer;
+    padding: 12px 16px;
+  font-size: 16px;
+    
   }
   button:hover {
-    color: rgb(0, 0, 0);
-    background: greenyellow;
+    color: white;
+    background: #008CBA;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   }
+
+  
   /* Heading */
   h3,
   label[for='new-task'] {
-    color: rgb(0, 0, 0);
+    background-color:#008CBA;
+    color: #ffff;
+    text-align: center;
+   
     font-weight: 700;
     font-size: 15px;
     border-bottom: 3px solid #333;
@@ -52,9 +60,10 @@ body {
   }
   input[type="text"] {
     margin: 12;
-    font-size: 18px;
-    line-height: 18px;
-    height: 18px;
+    width: 100;
+    font-size: 25px;
+    line-height: 35px;
+    height: 35px;
     padding: 10px;
     border: 2px solid #ddd;
     background:seashell;
@@ -63,21 +72,24 @@ body {
     color: rgb(0, 0, 0);
   }
   input[type="text"]:focus {
+    width: 100%;
     color: rgb(0, 0, 0);
     background:white;
   }
   
   /* New Task */
   label[for='new-task'] {
+    background-color:#008CBA;
+    color: #ffff;
     display: block;
     margin: 0 0 20px;
   }
   input#new-task {
     float: center;
-    width: 318px;
+    width: 95%;
   }
   p > button:hover {
-    color: #0FC57C;
+    color: white;
 
   }
   
@@ -92,6 +104,7 @@ body {
     position: relative;
     top: 15px;
   }
+  
   li > label {
     font-size: 18px;
     line-height: 40px;
@@ -102,7 +115,7 @@ body {
     width: 226px;
   }
   li > .delete:hover {
-    color:#0FC57C;
+    color:white;
   }
   
   /* Completed */
